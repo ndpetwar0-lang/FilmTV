@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Warning</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+font-family:Arial, sans-serif;
+
+/* BACKGROUND IMAGE */
+background:url("bg.jpg") center/cover no-repeat;
+}
+
+/* TEXT STYLE */
+.message{
+font-size:42px;
+font-weight:bold;
+color:#ff0000;
+padding:30px;
+
+/* 3D EFFECT */
+text-shadow:
+0 2px 0 #b30000,
+0 4px 0 #800000,
+0 6px 0 #500000,
+0 10px 20px rgba(0,0,0,0.8);
+
+/* ANIMATION */
+animation: glow 1.5s infinite alternate;
+}
+
+/* ANIMATION KEYFRAMES */
+@keyframes glow{
+0%{
+transform:scale(1);
+text-shadow:
+0 0 10px red,
+0 0 20px red,
+0 0 30px darkred;
+}
+
+100%{
+transform:scale(1.05);
+text-shadow:
+0 0 20px red,
+0 0 40px red,
+0 0 60px darkred;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="message">
+This app is not supported because Shizuku is not running
+</div>
+
+</body>
+</html>
